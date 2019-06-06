@@ -1,0 +1,386 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Source Sans Pro', sans-serif;
+ }
+ .contenedor {
+   background:rgb(52, 17, 207);
+   margin:auto;
+ }
+ .hiden-menu, .item-container-popover {
+   display: none;
+ }
+ /* ----- Estilos del header -------------------*/
+ header {
+   background: #f5eff4;
+   width: 100%;
+   height: 100px;
+   padding: 10px;
+
+   display: flex;
+   flex-flow: row wrap;
+   justify-content:space-between;
+ }
+
+ header .logo   {
+   color:#fff;
+   align-self: center;
+ }
+
+ header .titulo {
+   align-self: center;
+ }
+ header .titulo a {
+   color: black;
+   text-decoration: none;
+   font-size: 3.0em;
+ }
+ header .inputIcon {
+   align-self: center;
+ }
+
+ .header-left {
+   flex: 1;
+   display: flex;
+   padding-left: 20px;
+ }
+
+ .header-center {
+   flex: 6;
+   display: flex;
+   justify-content: space-between;
+   padding-left: 20px;
+ }
+
+ .header-right {
+   flex: 1;
+   display: flex;
+ }
+
+
+ header input[type="text"] {
+ width: 100%;
+ border: 2px solid #aaa;
+ border-radius: 15px;
+ margin: 8px 0;
+ outline: none;
+ padding: 8px;
+ box-sizing: border-box;
+ transition: 0.3s;
+
+}
+input[type="text"]:focus {
+ border-color: dodgerBlue;
+ box-shadow: 0 0 8px 0 dodgerBlue;
+}
+.inputIcon input[type="text"] {
+ padding-left: 40px;
+}
+.inputIcon {
+ position: relative;
+}
+.inputIcon i {
+ position: absolute;
+ left: 0;
+ top: 8px;
+ padding: 9px 8px;
+ color: #aaa;
+ transition: 0.3s;
+}
+.inputIcon input[type="text"]:focus + i {
+ color: dodgerBlue;
+}
+header .dropdown {
+width: 100%;
+}
+header .autor {
+   align-self: center;
+}
+header .autor .dropdown {
+ background: #f5eff4;
+ border: none;
+ font-size: 1em;
+}
+header .img-2 {
+ align-self: center;
+}
+header .img-2 img {
+ width: 50px;
+ height: 50px;
+ border-radius:150px;
+ border: 5px solid rgb(82, 123, 235,80);
+}
+
+/* ---- Contenedor Ppal (ASIDE - DIV - ASIDE) --------*/
+
+.container-main {
+ background:seashell;
+ width: 100%;
+ height: 1100px;
+ display: flex;
+ flex-flow: row wrap;
+}
+
+/* ----- Estilo de los ASIDE ----- */
+
+.box-style {
+ background: black;
+ color: white;
+ }
+
+.main-menu {
+ flex: 1;
+ padding: 10px;
+}
+.menu-1, .menu-2, .link-books {
+ padding: 40px 10px;
+}
+
+.menu-1 [class*="icon-"]:before, .menu-2 [class*="icon-"]:before {
+ position: relative;
+ top: 2px;
+ right: 15px;
+}
+
+.menu-1 li, .menu-2 li {
+ list-style: none;
+ display: block;
+ list-style-type: disc;
+ margin-top: 1em;
+ margin-bottom: 1 em;
+ margin-left: 0;
+ margin-right: 0;
+ padding-left: 10px;
+}
+.menu-1 li a, .menu-2 li a{
+ color: rgb(83, 94, 243);
+ text-decoration: none;
+}
+.menu-links {
+ flex: 1;
+ padding: 10px;
+}
+.link-books li {
+
+ list-style-type:decimal;
+ margin-top: 1em;
+ margin-bottom: 1 em;
+ margin-left: 15;
+ margin-right: 10;
+ padding-left: 10px;
+
+
+ //overflow:hidden;
+ //white-space:nowrap;
+ //text-overflow: ellipsis;
+}
+.link-books li a {
+ text-decoration: none;
+}
+
+/* --------------------------- Estilos del contenido del BookShelf ------------------------------------*/
+.releases {
+ background: #fff;
+ width: 100%;
+ height: 40px;
+ padding: 10px;
+ display:flex;
+ justify-content: space-between;
+
+}
+.releases a {
+ color: aqua;
+ text-decoration: none;
+ font-size: 1.5em;
+ width: 35px;
+ height: 35px;
+
+}
+.list-book {
+ background: #fff;
+ flex: 6;
+ height: 100%;
+ border: 1px rgb(170, 212, 253) solid;
+ padding: 15px 80px;
+ overflow: auto;
+}
+.item-container {
+   width: 190px;
+   height: 325px;
+   margin: 9px;
+}
+.book-img {
+ width: 190px;
+ height: 227px;
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+.titulos {
+ margin: 5px;
+ padding: 10px 0;
+ font-size: 15px;
+ font-weight: bold;
+}
+
+.estadisticas {
+ background: black;
+ flex: 1;
+ color:#fff;
+}
+
+ /* --- Estrellas para Rating -- */
+ .ec-stars-wrapper {
+   font-size: 0;
+   display: inline-block;
+ }
+
+ .ec-stars-wrapper a {
+   text-decoration: none;
+   display: inline-block;
+   font-size: 14px;
+   color:rgb(39, 130, 228);;
+}
+.ec-stars-wrapper-2 {
+   font-size: 0;
+   display: inline-block;
+ }
+
+ .ec-stars-wrapper-2 a {
+   text-decoration: none;
+   display: inline-block;
+   font-size: 14px;
+   color:rgb(228, 184, 39);;
+}
+ /*
+ .ec-stars-wrapper:hover a {
+   color: rgb(39, 130, 228);
+ }
+
+ .ec-stars-wrapper > a:hover ~ a {
+   color: #888;
+ }
+ */
+ .books-container {
+   display: flex;
+   flex-wrap: wrap;
+ }
+ .book-container {
+   position: relative;
+ }
+
+ .book-menu-container {
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top: 0;
+   display: none;
+   padding: 20px;
+ }
+ .top-icons {
+   display: flex;
+   justify-content:space-between;
+   padding: 10px;
+ }
+.items a{
+   font-size: 1em;
+   background: #fff;
+   padding: 5px;
+   border-radius: 150px;
+   text-decoration: none;
+ }
+ .middle-icons {
+   margin-top: 35px;
+   width: 100%;
+   padding:10px;
+   text-align: center;
+ }
+ .bottom-icons {
+   margin-top: 35px;
+   width: 100%;
+   padding:10px;
+   text-align: center;
+
+ }
+ .bottom-icons p{
+   color: #fff;
+   font-size: .5em;
+   //text-align: center;
+
+ }
+ .book-img {
+   width: 190px;
+   height: 227px;
+ }
+
+ .book-img:hover + .book-menu-container, .book-menu-container:hover {
+   display: block;
+   background: rgba(0, 0,0, 0.5);
+ }
+
+ .titulos > p {
+ white-space: nowrap;
+ overflow: hidden;
+ /* text-overflow: ellipsis; */
+ text-overflow: wrap;
+ padding-bottom: 1px;
+ }
+
+ .book-autor {
+   color: #ccc;
+   font-size: 13px;
+   /* font-color: black; */
+
+ }
+
+ .popover-menu-book {
+   display: none;
+   position: absolute;
+   top: 0;
+   left: 208px;
+   background: rgba(0, 0,0, 0.6);
+   width: 400px;
+   height: 335px;
+   padding: 30px;
+
+   color: #fff;
+   font-size: .8em;
+   z-index:1;
+   /* font-color: black; */
+ }
+ .titulos-pop-hover {
+   padding: 5px;
+
+ }
+ .popover-menu-book  #destacado{
+  color: rgb(143, 213, 245);
+
+}
+.popover-menu-book  #destacado2{
+  color:rgb(214, 198, 198);
+}
+.book-summary {
+   margin-top:15px;
+   text-align: justify;
+
+ }
+ .book-rating {
+   margin-top:15px;
+   text-align: justify;
+ }
+.book-recomended-by {
+   margin-top:15px;
+   text-align: left;
+   width: 80%;
+ }
+ .book-recomended-by  img {
+   width: 35px;
+   height: 35px;
+   border-radius:150px;
+   padding: 5px;
+ }
+
+ .book-menu-container:hover + .popover-menu-book {
+   position: absolute;
+   display: block;
+ }
